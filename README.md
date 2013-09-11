@@ -1,6 +1,8 @@
 greenshoots
 ===========
 
-github pages trial for Greenshoots
+Github pages trial for Greenshoots
 
-look at it at http://elliz.github.io/greenshoots very much a work in progress playing with Jekyll
+Look at it at http://elliz.github.io/greenshoots very much a work in progress playing with Jekyll
+
+Remember to change to the gh-pages branch
