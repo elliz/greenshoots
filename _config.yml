@@ -1,13 +1,9 @@
 name: "Greenshoots"
 description: "Photography for industry and science."
 
-# url: "www.greenshoots.co.uk"
-
 paginate: 100
 
-# markdown: 
-permalink: /:categories/:title 
+permalink: /:categories/:title
 pygments: false
 
-# do not post future dated posts or images
 future: false  
