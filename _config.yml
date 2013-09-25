@@ -1,6 +1,7 @@
 name: "Greenshoots"
 description: "Photography for industry and science."
 
+baseurl: /greenshoots/
 paginate: 100
 
 permalink: /:categories/:title

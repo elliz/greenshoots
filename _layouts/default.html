@@ -2,21 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>{{ page.name }} - {{ site.name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="/assets/ico/favicon.png">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="sam@elliz.com">
+    <link rel="shortcut icon" href="/favicon.png">
 
-    <title>Greenshoots - try with Bootstrap</title>
+
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap-min.css" rel="stylesheet">
-	<link href="navbar-fixed-top.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}css/bootstrap-min.css" rel="stylesheet">
+	<link href="{{ site.baseurl }}css/navbar-fixed-top.css" rel="stylesheet">
 	
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
+      <script src="{{ site.baseurl }}js/html5shiv.js"></script>
+      <script src="{{ site.baseurl }}js/respond.min.js"></script>
     <![endif]-->
   </head>
 
@@ -64,12 +65,7 @@
 
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar">View navbar docs &raquo;</a>
-        </p>
+        {{ content }}
       </div>
 
     </div> <!-- /container -->
@@ -78,7 +74,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}js/jquery-1.10.2.min.js"></script>
+    <script src="{{ site.baseurl }}js/bootstrap.min.js"></script>
   </body>
 </html>
