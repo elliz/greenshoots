@@ -11,11 +11,7 @@ Dramatic, high quality corporate photography and exhibition displays.
 Tags
 ----
 {% for tag in site.tags %}
-tag: {{ tag }}
-tag[0]: {{ tag[0] }}
-tag[1]: {{ tag[1] }}
-TAG size: {{ tag[1].size }}
-image: {{ tag.image }} <hr />
+tag: {{ tag }} 
 
 {% endfor %}
 

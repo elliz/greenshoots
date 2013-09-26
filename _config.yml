@@ -1,8 +1,9 @@
 name: "Greenshoots"
 description: "Photography for industry and science."
 
-baseurl: file:///C:/Users/sam/Documents/GitHub/greenshoots/_site/
-paginate: 100
+#baseurl: file:///C:/Users/sam/Documents/GitHub/greenshoots/_site/
+# baseurl: /
+ baseurl: /greenshoots/
 
 permalink: /:categories/:title
 pygments: false

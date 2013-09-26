@@ -6,5 +6,8 @@ layout: default
 
 Portfolio
 ======================
+This is a test {{ site.categories.portfolio | size }} items in portfolio.
 
-This is a test
+{% for image in site.categories.portfolio %}
+<a href="{{ image.title }}/index.html"><img src="../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}"></a>
+{% endfor %}
