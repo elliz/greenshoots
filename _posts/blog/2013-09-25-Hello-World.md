@@ -1,5 +1,7 @@
 ---
 title: "Hello to the World"
+layout: default
+section: blog
 ---
 Hello World
 

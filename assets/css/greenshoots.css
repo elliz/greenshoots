@@ -1,0 +1,8 @@
+body.home .menu-home a,
+body.about .menu-about a,
+body.portfolio .menu-portfolio a,
+body.contact .menu-contact a ,
+body.blog .menu-blog a{
+  color: #555555;
+  background-color: #e7e7e7;
+}
