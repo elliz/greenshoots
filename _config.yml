@@ -3,7 +3,7 @@ description: "Photography for industry and science."
 
 # baseurl: file:///C:/Users/sam/Documents/GitHub/greenshoots/_site/
 # baseurl: /
-baseurl: /greenshoots/
+baseurl: "/greenshoots/"
 
 permalink: /:categories/:title
 pygments: false
