@@ -4,17 +4,13 @@ section: about
 layout: default
 ---
 
-About
-======================
+About us
+========
 
-Led by Norman Childs and Pat Shirreff-Thomas, Greenshoots are established innovators using the new technologies in corporate image making with a wide variety of national and multinational clients covering the following industries: Oil, Gas, Power Generation, Mining, Engineering and Automotive, Pharmaceutical, Chemical and Food Processing, Water, Waste and Environmental, Banking and Insurance, Telecoms and IT.
+Norman Childs and Pat Shirreff-Thomas created the partnership of Greenshoots and are established innovators by using the new technologies in *corporate image making*. Their multi-national clients are drawn from an array of industries including; Oil, Mining, Marine, Engineering and Automotive, Pharmaceuticals, Telecommunications, Water, Waste and Environmental Technologies.
 
-Norman Childs
---------------
+As *award winning creative photographers*, their work has illustrated corporate literature, investor relations presentations and corporate and social responsibility. Assignments have taken them throughout Africa, USA, Latin America, the Middle East, South East Asia and the Indian sub-continent as well as Europe.
 
-As an award winning creative photographer, Norman produces work that has illustrated corporate literature, calendars and exhibitions. Assignments take him throughout Europe, Scandinavia, USA and Latin America, Africa, the Middle East, South East Asia and the Indian sub-continent.
+Norman and Pat are also involved in education by creating *dramatic and exciting photographic interpretations of science and research*, to encourage young people to take up the sciences.
 
-Pat Shirreff-Thomas
-------------------
-
-Multimedia producer with special expertise in video production and direction. Pat has developed her own brand of image making in industry and on environmental issues. She has created her own unique style using the new technologies in bringing images onto CD ROM and other platforms for presentations via computers and projection.
+View some images in our [Portfolio](../portfolio/).
