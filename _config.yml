@@ -6,5 +6,6 @@ baseurl: "/greenshoots/"
 
 permalink: /:categories/:title
 pygments: false
+# markdown: rdiscount
 
 future: false  
