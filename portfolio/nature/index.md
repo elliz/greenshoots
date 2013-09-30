@@ -1,14 +1,14 @@
 ---
-title: "Architectural photos and images - Portfolio"
+title: "Natural photos and images - Portfolio"
 section: portfolio
 layout: default
 
 ---
 
-Architecture
+Nature
 ======================
-{{ site.tags.architecture | size }} items in portfolio.
+{{ site.tags.nature | size }} items in portfolio.
 
-{% for image in site.tags.architecture %}
+{% for image in site.tags.nature %}
 <a href="../..{{ image.url }}/"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
 {% endfor %}

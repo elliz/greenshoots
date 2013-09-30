@@ -1,0 +1,8 @@
+{{ currenttagtitle }}
+======================
+
+This is a test {{ tags | size }} items in portfolio.
+
+{% for image in tags %}
+<a href="../{{ image.title }}/index.html"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
+{% endfor %}
