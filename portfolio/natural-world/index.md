@@ -1,14 +1,12 @@
 ---
-title: "Pro Imaging photos and images - Portfolio"
+title: "Natural World photos and images - Portfolio"
 section: portfolio
 layout: default
-
 ---
 
-Pro Imaging
+Natural World
 ======================
-Images from the Pro-Imaging forum {{ site.tags.proimaging | size }} items in portfolio.
 
-{% for image in site.tags.proimaging %}
+{% for image in site.tags.nature %}
 <a href="../..{{ image.url }}/"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
 {% endfor %}
