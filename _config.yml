@@ -2,8 +2,9 @@ name: "Greenshoots"
 description: "Photography for industry and science."
 
 # baseurl: /_site/
-baseurl: C:\Users\sam\Documents\GitHub\greenshoots\_site\
-# baseurl: "/greenshoots/"
+# baseurl: C:\Users\sam\Documents\GitHub\greenshoots\_site\
+
+baseurl: "/greenshoots/"
 
 permalink: /:categories/:title
 pygments: false
