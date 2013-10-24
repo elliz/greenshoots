@@ -6,3 +6,9 @@ body.blog .menu-blog a{
   color: #555555;
   background-color: #e7e7e7;
 }
+
+h1, h2, h3 { color: #336633 }
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form { background-color:  #FFF }
+
+body { background: #e6e6e6 }
