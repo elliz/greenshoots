@@ -7,6 +7,6 @@ layout: default
 Science and Technology
 ======================
 
-{% for image in site.tags.technology %}
+{% for image in site.tags.science-technology %}
 <a href="../..{{ image.url }}/"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
 {% endfor %}

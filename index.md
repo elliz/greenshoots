@@ -10,10 +10,9 @@ Creative, high quality photography from around the world.
 
 [![Architecture](assets/square/GSEL5D01CC.jpg)](portfolio/architecture "View our architectural images")
 [![Industry](assets/square/GSKRCH143766.jpg)](portfolio/industry "View our industrial images")
-[![Natural World](assets/square/GSEL5D01CC.jpg)](portfolio/natural-world "View our images of the natural world")
-[![People](assets/square/GSEL5D01CC.jpg)](portfolio/people "View our images of people")
-[![Science and Technology](assets/square/GSEL5D01CC.jpg)](portfolio/science-technology "View our science and technology images")
-
+[![Natural World](assets/square/GSHRBF275213.jpg)](portfolio/natural-world "View our images of the natural world")
+[![People](assets/square/GSAMTK120008.jpg)](portfolio/people "View our images of people")
+[![Science and Technology](assets/square/GSAMTK143749.jpg)](portfolio/science-technology "View our science and technology images")
 
 <!--
 {% for image in site.categories.portfolio %}
