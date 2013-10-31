@@ -1,14 +1,35 @@
+
+body {
+  font-size: 16px;
+  line-height: 1.428571429;
+  padding-top: 30px;
+}
+
 body.home .menu-home a,
 body.about .menu-about a,
 body.portfolio .menu-portfolio a,
 body.contact .menu-contact a ,
-body.blog .menu-blog a{
+body.news .menu-news a{
   color: #555555;
   background-color: #e7e7e7;
 }
 
 h1, h2, h3 { color: #336633 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form { background-color:  #FFF }
 
-body { background: #e6e6e6 }
+.navbar-default,
+.navbar-default .navbar-collapse, 
+.navbar-default .navbar-form {
+     background-color:  #FFF;
+     border: none;
+}
+
+.footer {
+    margin: 2em auto;
+    font-size: 0.8em;
+    xtext-align: center;
+    color: #808080;
+}
+         
+         
+         
