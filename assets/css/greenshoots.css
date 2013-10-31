@@ -16,6 +16,21 @@ body.news .menu-news a{
 
 h1, h2, h3 { color: #336633 }
 
+.img-responsive {
+    max-height: 80%;
+}
+
+.photo{
+    text-align: center;
+}
+
+.photo .img-responsive{
+    margin: 0 auto 1em;
+}
+
+.photo p, .photo caption{
+    font-size: 0.9em;
+}
 
 .navbar-default,
 .navbar-default .navbar-collapse, 
