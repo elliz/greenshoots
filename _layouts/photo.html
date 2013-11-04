@@ -22,30 +22,43 @@
     {% include menu.html %}
 
     <div class="container photo">
-		
-<ul>
-{% for category in site.categories %}
-    {% assign catg_name = category.first %}
-    {% if catg_name == page.tags %}
-        {% assign catg_posts = category.last %}
-    {% endif %}
-{% endfor %}
+
+
+{% assign cur_tag = page.tags[0] %}
+{% assign found = false %}
+{% assign catg_posts = site.categories.portfolio %}
+
 {% for post in catg_posts %}
-    {% if post.title == page.title %}
-        {% unless forloop.last %}
-            {% assign next = catg_posts[forloop.index] %}
-            <li class="previous">
-            <a href="{{ site.baseurl }}{{ next.url }}">&larr;{{ next.title }}</a>
-            </li>
-        {% endunless %}
-        {% unless forloop.first %}
-            <li class="next">
-            <a href="{{ site.baseurl }}{{ prev.url }}">{{ prev.title }}&rarr;</a>
-            </li>
-        {% endunless %}
+    {% assign cur_post_tag = post.tags[0] %}
+    {% if cur_post_tag == cur_tag %}
+        
+        {% if found == true %}
+            {% assign next_post = post %}
+            {% assign found = false %}
+        {% endif %}
+
+        {% if post.title == page.title %}
+            {% assign prev_post = prev %}
+            {% assign found = true %}
+        {% endif %}
+
+        {% assign prev = post %}
+        
     {% endif %}
-    {% assign prev = post %}
+    
 {% endfor %}
+
+        <ul class="photonav clearfix">
+{% unless prev_post == null %}
+            <li class="previous">
+            <a href="{{ site.baseurl }}{{ prev_post.url }}">&larr; {{ prev_post.title }}</a>
+            </li>
+{% endunless %}
+{% unless next_post == null %}
+                <li class="next">
+                <a href="{{ site.baseurl }}{{ next_post.url }}">{{ next_post.title }} &rarr;</a>
+                </li>
+{% endunless %}
 </ul>
 				
 		<img src="../../assets/photos/{{ page.photo }}" alt="{{ page.title }}" class="img-responsive" />

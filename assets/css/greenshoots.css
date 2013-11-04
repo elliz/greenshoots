@@ -18,6 +18,7 @@ h1, h2, h3 { color: #336633 }
 
 .img-responsive {
     max-height: 80%;
+    height: auto;
 }
 
 .photo{
@@ -30,6 +31,28 @@ h1, h2, h3 { color: #336633 }
 
 .photo p, .photo caption{
     font-size: 0.9em;
+}
+
+.photonav {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0;
+    font-size: .8em;
+}
+
+.photonav li {
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 50%;
+}
+
+.photonav .previous {
+    float: left;
+}
+
+.photonav .next {
+    float: right;
 }
 
 .navbar-default,
