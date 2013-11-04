@@ -37,7 +37,7 @@
             {% assign found = false %}
         {% endif %}
 
-        {% if post.title == page.title %}
+        {% if post.photo == page.photo %}
             {% assign prev_post = prev %}
             {% assign found = true %}
         {% endif %}
@@ -48,7 +48,20 @@
     
 {% endfor %}
 
-        <ul class="photonav clearfix">
+        {% if next_post != null %}
+        <a href="{{ site.baseurl }}{{ next_post.url }}" title="Next image">
+        {% else %}
+        <a href="{{ site.baseurl }}" title="Home">
+        {% endif %}
+		<img src="../../assets/photos/{{ page.photo }}" alt="{{ page.title }}" class="img-responsive" /></a>
+        
+        <p>{{ page.title }}</p>
+
+        <div>
+        {{ content }}
+		</div>
+
+                <ul class="photonav clearfix">
 {% unless prev_post == null %}
             <li class="previous">
             <a href="{{ site.baseurl }}{{ prev_post.url }}">&larr; {{ prev_post.title }}</a>
@@ -59,15 +72,7 @@
                 <a href="{{ site.baseurl }}{{ next_post.url }}">{{ next_post.title }} &rarr;</a>
                 </li>
 {% endunless %}
-</ul>
-				
-		<img src="../../assets/photos/{{ page.photo }}" alt="{{ page.title }}" class="img-responsive" />
-	
-        <p>{{ page.title }}</p>
-
-        <div>
-        {{ content }}
-		</div>
+        </ul>
 
 	{% include footer.html %}
 			

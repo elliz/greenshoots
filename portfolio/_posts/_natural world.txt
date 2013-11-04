@@ -1,0 +1,129 @@
+
+--- 
+title Hippopotamus – Victoria Nile – Murchison Falls National Park, Uganda
+photo: GSBF245135.jpg 
+layout: photo 
+section: portfolio 
+tags: natural-world
+---  
+
+ 
+
+--- 
+title: Wild elephant taking refreshment at Mole National Wildlife Park, Ghana
+
+photo: GSGF069850.jpg 
+layout: photo 
+section: portfolio
+tags: natural-world 
+---  
+
+--- 
+title: Baboon, Mole National Wildlife Park, Ghana
+photo: GSGF130083X.jpg 
+layout: photo 
+section: portfolio
+tags: natural-world 
+---  
+
+--- 
+title: Praying Mantis, Lake Albert, Northern Uganda
+photo: GSHR022324.jpg 
+layout: photo 
+section: portfolio
+tags: natural-world 
+---  
+
+
+
+--- 
+title: Dawn over Sahara Desert, Mauritania
+photo: GSKT193072X.jpg 
+layout: photo 
+section: portfolio 
+tags: natural-world 
+---  
+
+
+--- 
+title: Small plant showing the 'greening' of the Sahara Desert after rare rainfall, Mauritania
+photo: GSKT210083.jpg 
+layout: photo 
+section: portfolio
+tags: natural-world 
+---  
+
+
+--- 
+title: Ripe cocoa pods in rain forest, Island of Bioko, Equatorial Guinea
+photo: GSLE077406.jpg 
+layout: photo 
+section: portfolio
+tags: natural-world 
+---  
+
+
+--- 
+title: Seeds of the redwood tree - 'Tieghemella Heckelli' (Abakoi) Sunyani, Ghana
+photo: GSNM095418.jpg 
+layout: photo 
+section: portfolio
+tags: natural-world 
+---  
+
+
+
+--- 
+title: Sunken volcano, Lake Turkana, Northern Kenya
+photo: GSTUKN520020.jpg 
+layout: photo 
+section: portfolio
+tags: natural-world 
+---  
+
+
+--- 
+title: Part of the Volcanic Barrier, Lake Turkana, Northern Kenya
+photo: GSTUKN520026.jpg 
+layout: photo 
+section: portfolio 
+tags: natural-world 
+---  
+
+
+--- 
+title: Fiery Lake near the Volcanic Barrier Turkana, Northern Kenya
+photo: GSTUKN570035.jpg 
+layout: photo 
+section: portfolio
+tags: natural-world 
+---  
+
+
+--- 
+title: Hoodoo Valley, Northern Kenya
+photo: GSTUKN595981.jpg 
+layout: photo 
+section: portfolio 
+tags: natural-world
+---  
+
+--- 
+title: Rock sample showing Banded Iron Formation (BIF) from gold mine in Sierra Leone
+photo: GSCGBH064639.jpg 
+layout: photo 
+section: portfolio
+tags: natural-world 
+--- 
+
+
+--- 
+title: 2.5 billion years old gold ore sample from the Sahara Desert, showing a combination of meta rhyolite, iron, manganese and goethite, Mauritania
+photo: GSKT263359.jpg 
+layout: photo 
+section: portfolio 
+tags: natural-world 
+---  
+
+2.5 Billion years old ore showing weathered Banded Iron Formation (BIF) which is a combination of chlorite, iron oxide and magnetite. (brown areas – where the gold is found). The black areas are quartz and fine grain quartz or silica. (This note is for the future!)
+
