@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/favicon.png">
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ site.baseurl }}assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}assets/css/bootstrap.css" rel="stylesheet">
 	<link href="{{ site.baseurl }}assets/css/greenshoots.css" rel="stylesheet">
 	
     <!--[if lt IE 9]>
@@ -22,18 +22,14 @@
     {% include menu.html %}
 
     <div class="container">
-
-    <div class="row">
-        <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 ">
+        <div class="row">
         {{ content }}
 
         {% include footer.html %}
-        
+       
         </div>
-    </div>
-    
-	
-	
+
+
 	</div> <!-- /container -->
 
     <script src="{{ site.baseurl }}assets/js/jquery-1.10.2.min.js"></script>

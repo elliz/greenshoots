@@ -17,8 +17,16 @@ body.news .menu-news a{
 h1, h2, h3 { color: #336633 }
 
 .img-responsive {
-    max-height: 80%;
-    height: auto;
+    max-height: 100%;
+}
+
+p{
+    margin-top: 1.2em;
+}
+
+photo-wrapper
+{
+    max-height: 100%;
 }
 
 .photo{
@@ -65,7 +73,7 @@ h1, h2, h3 { color: #336633 }
 .footer {
     margin: 2em auto;
     font-size: 0.8em;
-    xtext-align: center;
+    text-align: center;
     color: #808080;
 }
          

@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="/favicon.png">
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ site.baseurl }}assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}assets/css/bootstrap.css" rel="stylesheet">
 	<link href="{{ site.baseurl }}assets/css/greenshoots.css" rel="stylesheet">
 	
     <!--[if lt IE 9]>
@@ -48,13 +48,15 @@
     
 {% endfor %}
 
+        <div class="photo-wrapper">
         {% if next_post != null %}
         <a href="{{ site.baseurl }}{{ next_post.url }}" title="Next image">
         {% else %}
         <a href="{{ site.baseurl }}" title="Home">
         {% endif %}
 		<img src="../../assets/photos/{{ page.photo }}" alt="{{ page.title }}" class="img-responsive" /></a>
-        
+        </div>
+
         <p>{{ page.title }}</p>
 
         <div>
@@ -64,12 +66,12 @@
                 <ul class="photonav clearfix">
 {% unless prev_post == null %}
             <li class="previous">
-            <a href="{{ site.baseurl }}{{ prev_post.url }}">&larr; {{ prev_post.title }}</a>
+            <a href="{{ site.baseurl }}{{ prev_post.url }}">&larr; Previous</a>
             </li>
 {% endunless %}
 {% unless next_post == null %}
                 <li class="next">
-                <a href="{{ site.baseurl }}{{ next_post.url }}">{{ next_post.title }} &rarr;</a>
+                <a href="{{ site.baseurl }}{{ next_post.url }}">Next &rarr;</a>
                 </li>
 {% endunless %}
         </ul>
