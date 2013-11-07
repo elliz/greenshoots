@@ -19,23 +19,23 @@ Creative, high quality photography from around the world.
 
 <style>.row img {width:100%; height:auto;margin:0 0 1em}</style>
 
-<div class="col-xs-12 col-sm-4">
-    <a href="portfolio/architecture" title="View our architectural images"><img src="assets/square/GSEL5D01CC.jpg" alt="architecture" class="img-responsive" /></a>
+<div class="col-xs-6 col-sm-4">
+    <a href="portfolio/architecture" title="View our architectural images"><img src="assets/images/architecture-sq-20.jpg" alt="architecture" class="img-responsive" /></a>
 </div>
-<div class="col-xs-12 col-sm-4">
-    <a href="portfolio/industry" title="View our industrial images"><img src="assets/square/GSKRCH143766.jpg" alt="Industry" /></a>
+<div class="col-xs-6 col-sm-4">
+    <a href="portfolio/industry" title="View our industrial images"><img src="assets/images/industry-sq-20.jpg" alt="Industry" /></a>
 </div>
-<div class="col-xs-12 col-sm-4">
-    <a href="portfolio/natural-world" title="View our images of the natural world"><img src="assets/square/GSHRBF275213.jpg" alt="Natural World" /></a>
+<div class="col-xs-6 col-sm-4">
+    <a href="portfolio/natural-world" title="View our images of the natural world"><img src="assets/images/nature-sq-20.jpg" alt="Natural World" /></a>
 </div>
-<div class="col-xs-12 col-sm-4">
-    <a href="portfolio/people" title="View our images of people"><img src="assets/square/GSAMTK120008.jpg" alt="People" /></a>
+<div class="col-xs-6 col-sm-4">
+    <a href="portfolio/people" title="View our images of people"><img src="assets/images/people-sq-12.jpg" alt="People" /></a>
 </div>
-<div class="col-xs-12 col-sm-4">
-    <a href="portfolio/science-technology" title="View our science and technology images"><img src="assets/square/GSAMTK143749.jpg" alt="Science and Technology" /></a>
+<div class="col-xs-6 col-sm-4">
+    <a href="portfolio/science-technology" title="View our science and technology images"><img src="assets/images/science-sq-20.jpg" alt="Science and Technology" /></a>
 </div>
-<div class="col-xs-12 col-sm-4">
-    <a href="news/" title="Latest news and information"><img src="assets/square/GSNS022752.jpg" alt="News" /></a>
+<div class="col-xs-6 col-sm-4">
+    <a href="news/" title="Latest news and information"><img src="assets/images/news-sq-08.jpg" alt="News" /></a>
 </div>
 
 </div>
