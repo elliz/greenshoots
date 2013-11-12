@@ -21,51 +21,52 @@ Creative, high quality photography from around the world.
 
 <div class="col-xs-6 col-sm-4">
 
-<figure class="cap-left">
-    <a href="portfolio/architecture" title="View our architectural images"><img src="assets/images/architecture-sq-20.jpg" alt="architecture" class="img-responsive" /></a>
+<figure class="cap-bot">
+    <a href="portfolio/architecture" title="View our architectural images"><img src="assets/images/architecture-sq-20.jpg" alt="architecture" class="img-responsive" />
 	<figcaption>
 		Architecture
 	</figcaption>
+    </a>
 </figure>
 </div>
 <div class="col-xs-6 col-sm-4">
-<figure class="cap-left">
-    <a href="portfolio/industry" title="View our industrial images"><img src="assets/images/industry-sq-20.jpg" alt="Industry" /></a>
+<figure class="cap-bot">
+    <a href="portfolio/industry" title="View our industrial images"><img src="assets/images/industry-sq-20.jpg" alt="Industry" />
 	<figcaption>
 		Industry
-	</figcaption>
+	</figcaption></a>
 </figure>
 </div>
 <div class="col-xs-6 col-sm-4">
-<figure class="cap-left">
-    <a href="portfolio/natural-world" title="View our images of the natural world"><img src="assets/images/nature-sq-20.jpg" alt="Natural World" /></a>
+<figure class="cap-bot">
+    <a href="portfolio/natural-world" title="View our images of the natural world"><img src="assets/images/nature-sq-20.jpg" alt="Natural World" />
 	<figcaption>
 		Natural World
-	</figcaption>
+	</figcaption></a>
 </figure>
 </div>
 <div class="col-xs-6 col-sm-4">
-<figure class="cap-left">
-    <a href="portfolio/people" title="View our images of people"><img src="assets/images/people-sq-12.jpg" alt="People" /></a>
+<figure class="cap-bot">
+    <a href="portfolio/people" title="View our images of people"><img src="assets/images/people-sq-12.jpg" alt="People" />
 	<figcaption>
 		People
-	</figcaption>
+	</figcaption></a>
 </figure>
 </div>
 <div class="col-xs-6 col-sm-4">
-<figure class="cap-left">
-    <a href="portfolio/science-technology" title="View our science and technology images"><img src="assets/images/science-sq-20.jpg" alt="Science and Technology" /></a>
+<figure class="cap-bot">
+    <a href="portfolio/science-technology" title="View our science and technology images"><img src="assets/images/science-sq-20.jpg" alt="Science and Technology" />
 	<figcaption>
 		Science and Technology
-	</figcaption>
+	</figcaption></a>
 </figure>
 </div>
 <div class="col-xs-6 col-sm-4">
-<figure class="cap-left">
-    <a href="news/" title="Latest news and information"><img src="assets/images/news-sq-08.jpg" alt="News" /></a>
+<figure class="cap-bot">
+    <a href="news/" title="Latest news and information"><img src="assets/images/news-sq-08.jpg" alt="News" />
 	<figcaption>
 		News and Links
-	</figcaption>
+	</figcaption></a>
 </figure>
 </div>
 

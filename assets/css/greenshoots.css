@@ -91,15 +91,17 @@ figcaption {
   color: white;
   padding: 10px 20px;
   opacity: 0;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition:    all 0.6s ease;
-  -o-transition:      all 0.6s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition:    all 0.3s ease;
+  -o-transition:      all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 100%;
 }
 figure:hover figcaption {
   opacity: 1;
 }
 figure:before {
-  content: ">";
+  content: "i";
   position: absolute;
   font-weight: 800;
   background: black;
@@ -134,5 +136,5 @@ figure:hover:before {
 .cap-top:hover figcaption { top: 0; }
 
 .cap-bot:before { bottom: 10px; left: 10px; }
-.cap-bot figcaption { left: 0; bottom: -30%;}
+.cap-bot figcaption { left: 0; bottom: -50%;}
 .cap-bot:hover figcaption { bottom: 0; }         
