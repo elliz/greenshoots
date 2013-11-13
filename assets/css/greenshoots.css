@@ -17,7 +17,11 @@ body.news .menu-news a{
   background-color: #e7e7e7;
 }
 
-h1, h2, h3 { color: #336633 }
+h1, h2, h3 { 
+    color: #336633;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
 
 .img-responsive {
     max-height: 100%;

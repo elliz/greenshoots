@@ -12,6 +12,7 @@
     <!-- Bootstrap core CSS -->
     <link href="{{ site.baseurl }}assets/css/bootstrap.css" rel="stylesheet">
 	<link href="{{ site.baseurl }}assets/css/greenshoots.css" rel="stylesheet">
+      <link rel="stylesheet" href="{{ site.baseurl }}assets/css/blueimp-gallery.min.css">
 	
     <!--[if lt IE 9]>
       <script src="{{ site.baseurl }}assets/js/html5shiv.js"></script>
@@ -35,7 +36,30 @@
 
 	</div> <!-- /container -->
 
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
     <script src="{{ site.baseurl }}assets/js/jquery-1.10.2.min.js"></script>
     <script src="{{ site.baseurl }}assets/js/bootstrap.min.js"></script>
+
+            <script src="{{ site.baseurl }}assets/js/blueimp-gallery.min.js"></script>
+
+      <script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
   </body>
 </html>
