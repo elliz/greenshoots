@@ -13,7 +13,7 @@ layout: blueimp
 
 <div id="links">
 {% for image in site.categories.portfolio %}
-<a href="../assets/photos/{{ image.photo }}"><img src="../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
+<a href="../assets/photos/{{ image.photo }}" title="{{ image.title }}"><img src="../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
 {% endfor %}
 </div>
 {% include col-end.html %}

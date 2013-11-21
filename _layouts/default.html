@@ -7,11 +7,16 @@
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="sam@elliz.com">
     <link rel="shortcut icon" href="{{ site.baseurl }}favicon.png">
-      <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+      
+    <link href="http://fonts.googleapis.com/css?family=Droid+Serif:700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap core CSS -->
     <link href="{{ site.baseurl }}assets/css/bootstrap.css" rel="stylesheet">
 	<link href="{{ site.baseurl }}assets/css/greenshoots.css" rel="stylesheet">
+{% if page.gallery == true %}
+      <link rel="stylesheet" href="{{ site.baseurl }}assets/css/blueimp-gallery.min.css">
+{% endif %}
 	
     <!--[if lt IE 9]>
       <script src="{{ site.baseurl }}assets/js/html5shiv.js"></script>
@@ -22,23 +27,45 @@
   <body class="{{ page.section }}">
     {% include menu.html %}
 
-    <div class="container">
+    <div class="container" role="main">
         <div class="row clearfix">
         {{ content }}
         </div>
 
-        <div class="row">
         {% include footer.html %}
-       
-        </div>
-
 
 	</div> <!-- /container -->
 
-    <script src="{{ site.baseurl }}assets/js/jquery-1.10.2.min.js"></script>
-    <script src="{{ site.baseurl }}assets/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}assets/js/jquery-1.10.2.min.js"></script>
+<script src="{{ site.baseurl }}assets/js/bootstrap.min.js"></script>
 
-      <script>
+{% if page.gallery == true %}
+<script src="{{ site.baseurl }}assets/js/blueimp-gallery.min.js"></script>
+
+<script>
+document.getElementById('links').onclick = function (event) {
+    event = event || window.event;
+    var target = event.target || event.srcElement,
+        link = target.src ? target.parentNode : target,
+        options = {index: link, event: event},
+        links = this.getElementsByTagName('a');
+    blueimp.Gallery(links, options);
+};
+</script>
+
+<div id="blueimp-gallery" class="blueimp-gallery">
+    <div class="slides"></div>
+    <h3 class="title"></h3>
+    <a class="prev">‹</a>
+    <a class="next">›</a>
+    <a class="close">×</a>
+    <a class="play-pause"></a>
+    <ol class="indicator"></ol>
+</div>
+
+{% endif %}
+ 
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
