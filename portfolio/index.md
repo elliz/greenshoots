@@ -1,7 +1,9 @@
 ---
 title: "photography for science and industry"
+
 section: portfolio
-layout: blueimp
+layout: default
+gallery: true
 ---
 
 {% include col-start.html xs="12" sm="12" md="3" clearfix="" %}
@@ -9,6 +11,7 @@ layout: blueimp
 <h1>Portfolio</h1>
 
 {% include col-end.html %}
+
 {% include col-start.html xs="12" sm="12" md="9" clearfix="" %}
 
 <div id="links">

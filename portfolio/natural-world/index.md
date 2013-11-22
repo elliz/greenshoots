@@ -1,16 +1,12 @@
 ---
 title: "Natural World photos and images - Portfolio"
+
+heading: Natural World
+showtag: natural-world
+
 section: portfolio
-layout: default
+layout: portfolio
+gallery: true
+
+note: all the hard work done in _layouts/portfolio.html
 ---
-{% include col-start.html xs="12" sm="12" md="3" clearfix="" %}
-<h1>Natural World</h1>
-
-{% include col-end.html %}
-{% include col-start.html xs="12" sm="12" md="9" clearfix="" %}
-
-{% for image in site.tags.natural-world %}
-<a href="../..{{ image.url }}/"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
-{% endfor %}
-
-{% include col-end.html %}

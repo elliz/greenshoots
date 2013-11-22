@@ -12,11 +12,10 @@ gallery: false
 {% include col-start.html xs="12" sm="12" md="3" clearfix="" %}
 
 <h1>{{ page.heading }}</h1>
+<p>{{ page.intro }}</p>
 
 {% include col-end.html %}
 {% include col-start.html xs="12" sm="12" md="9" clearfix="" %}
-
-
 
 {% include home-figure-img.html link="portfolio/architecture" imgsrc="assets/images/architecture-sq-20.jpg" caption="Architecture" %}
 

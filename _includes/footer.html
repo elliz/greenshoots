@@ -1,9 +1,13 @@
-<footer role="contentinfo">
+<footer role="contentinfo" class="footer">
+{% if page.footerleft != true %}
 <div class="row">
-<div class="footer text-left clearfix col-md-offset-3 col-xs-12">
-&copy; Greenshoots Communications. 
-All rights reserved. 
+<div class="text-left clearfix col-md-offset-3 col-xs-12">
+{% endif %}
+&copy; Greenshoots Communications.<br />
+All rights reserved.
 <!-- generated {{ site.time }} -->
+{% if page.footerleft != true %}
 </div>
 </div>
+{% endif %}
 </footer>

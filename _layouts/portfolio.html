@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% include col-start.html xs="12" sm="12" md="3" clearfix="" %}
+
+<h1>{{ page.heading }}</h1>
+
+{% include col-end.html %}
+
+{% include col-start.html xs="12" sm="12" md="9" clearfix="" %}
+
+<div id="links">
+
+{% assign cur_tag = page.showtag %}
+{% assign catg_posts = site.categories.portfolio %}
+
+{% for image in catg_posts %}
+    {% assign cur_post_tag = image.tags[0] %}
+    {% if cur_post_tag == cur_tag %}
+<a href="../../assets/photos/{{ image.photo }}" title="{{ image.title }}"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
+ <!--       
+<a href="../..{{ image.url }}/"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
+-->
+    {% endif %}
+    
+{% endfor %}
+</div>
+
+{% include col-end.html %}

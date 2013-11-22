@@ -1,17 +1,12 @@
 ---
 title: "Technology and Science photos and images - Portfolio"
+
+heading: Science and Technology
+showtag: science-technology
+
 section: portfolio
-layout: default
+layout: portfolio
+gallery: true
+
+note: all the hard work done in _layouts/portfolio.html
 ---
-
-{% include col-start.html xs="12" sm="12" md="3" clearfix="" %}
-
-<h1>Science and Technology</h1>
-
-{% include col-end.html %}
-{% include col-start.html xs="12" sm="12" md="9" clearfix="" %}
-
-{% for image in site.tags.science-technology %}
-<a href="../..{{ image.url }}/"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
-{% endfor %}
-{% include col-end.html %}

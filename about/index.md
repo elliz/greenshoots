@@ -1,14 +1,11 @@
 ---
 title: "photography for science and industry"
+heading: About
+
 section: about
-layout: default
+layout: page
 ---
 
-<div class="col-xs-12 col-sm-12 col-md-3">
-<h1>About us</h1>
-</div>
-
-<div class="col-xs-12 col-sm-12 col-md-9">
 <p>
 Norman Childs and Pat Shirreff-Thomas created the partnership of Greenshoots and are established innovators by using the new technologies in <strong>corporate image making</strong>. Their multi-national clients are drawn from an array of industries including; Oil, Mining, Marine, Engineering and Automotive, Pharmaceuticals, Telecommunications, Water, Waste and Environmental Technologies.
 </p>
@@ -24,5 +21,3 @@ Norman and Pat are also involved in education by creating <strong>dramatic and e
 <p>
 View some images in our <a href="../portfolio/">Portfolio</a>.
 </p>
-
-</div>

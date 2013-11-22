@@ -66,6 +66,7 @@ photo-wrapper
 
 .photonav .next {
     float: right;
+    text-align: right;
 }
 
 .navbar-default,
@@ -87,7 +88,7 @@ figure {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 0 0  20px 0;
+  margin: 0 0 15px 0;
 }
 figcaption {
   position: absolute;
