@@ -97,6 +97,7 @@ figure {
   float: left;
   overflow: hidden;
   margin: 0 0 15px 0;
+  max-width: 100%;
 }
 figcaption {
   position: absolute;
@@ -139,6 +140,7 @@ figure:hover:before {
 
 figure img {
     max-width: 100%;
+    zoom: 1;
 }
 
 .cap-left:before {  bottom: 10px; left: 10px; }
