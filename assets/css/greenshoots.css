@@ -46,6 +46,14 @@ photo-wrapper
     font-size: 0.9em;
 }
 
+a {
+    color: #25A525;
+}
+
+a:visited { color: #339933; }
+a:hover { color: #993333}
+a:active { color: #996633 }
+
 .photonav {
     list-style: none;
     padding: 0;
