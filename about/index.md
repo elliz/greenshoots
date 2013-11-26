@@ -15,7 +15,7 @@ As <strong>award winning creative photographers</strong>, <a href="../portfolio/
 </p>
 
 <p>
-Norman and Pat are also involved in education by creating <strong>dramatic and exciting photographic interpretations of <a href="../portfolio/science-technology/">science and research</a></strong>, to encourage young <a href="../portfolio/people/">people</a> to take up the sciences.
+Norman and Pat are also involved in education by creating <strong>dramatic and exciting photographic interpretations of <a href="../portfolio/science-technology/">science and technology</a></strong>, to encourage young <a href="../portfolio/people/">people</a> to take up the sciences.
 </p>
 
 <p>
