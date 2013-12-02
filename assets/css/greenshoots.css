@@ -1,6 +1,5 @@
 html, body, .container {
-    height: 100;
-    font-family: 'Droid Sans', sans-serif;
+    font-family: 'Droid Sans', "quatro-1", "quatro-2", "Arial", Verdana, sans-serif;
 }
 
 body {
@@ -20,7 +19,7 @@ body.news .menu-news a{
 
 h1, h2, h3 { 
     color: #336633;
-    font-family: 'Droid Serif', sans-serif;
+    font-family: 'Droid Sans', "quatro-1", "quatro-2", "Arial", Verdana, sans-serif;
     font-weight: 700;
 }
 
