@@ -36,9 +36,9 @@ As <strong>award winning creative photographers</strong>, <a href="../portfolio/
     <li>Africa</li>
     <li>USA</li>
     <li>Latin America</li>
-    <li>the Middle East</li>
+    <li>The Middle East</li>
     <li>South East Asia</li>
-    <li>the Indian sub-continent</li>
+    <li>The Indian sub-continent</li>
     <li>Europe</li>
 </ul>
 
