@@ -324,3 +324,6 @@ body:last-child .blueimp-gallery>.slides>.slide>.video-content:not(.video-loadin
 	transform: translateZ(0);
 	webkit-transform: translateZ(0);
 }
+
+.blueimp-gallery ::-moz-selection { color: transparent; background: transparent;}
+.blueimp-gallery ::selection { color: transparent; background: transparent;}
