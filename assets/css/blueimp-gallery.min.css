@@ -327,3 +327,10 @@ body:last-child .blueimp-gallery>.slides>.slide>.video-content:not(.video-loadin
 
 .blueimp-gallery ::-moz-selection { color: transparent; background: transparent;}
 .blueimp-gallery ::selection { color: transparent; background: transparent;}
+.blueimp-gallery img {
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; 
+}
