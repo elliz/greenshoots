@@ -104,6 +104,13 @@
 	webkit-border-radius: 23px;
 	webkit-box-sizing: content-box;
 	width: 40px;
+	
+	
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; 
 }
 .blueimp-gallery>.next
 {
