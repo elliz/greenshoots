@@ -1,8 +1,14 @@
 name: "Greenshoots"
 description: "Photography for industry and science."
 
-baseurl: /_site/
-# baseurl: "/greenshoots/"
+# local
+# baseurl: /_site/
+
+# github
+baseurl: "/greenshoots/"
+
+# live
+# baseurl: "/"
 
 permalink: /:categories/:title
 pygments: false
