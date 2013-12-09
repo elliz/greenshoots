@@ -1,5 +1,5 @@
 ---
-title: "News and links"
+title: "News and Links"
 heading: News
 
 section: news

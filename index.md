@@ -1,5 +1,5 @@
 ---
-title: "photography for science and industry"
+title: "Photography for Science and Industry"
 description: 
 heading: Welcome
 intro: "Creative, high quality photography from around the world."

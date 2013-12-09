@@ -1,5 +1,5 @@
 ---
-title: "photography for science and industry"
+title: "Get in touch"
 heading: Contact
 
 section: contact

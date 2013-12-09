@@ -1,5 +1,5 @@
 ---
-title: "photography for science and industry"
+title: "About us"
 heading: About
 
 section: about

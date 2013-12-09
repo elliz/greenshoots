@@ -1,5 +1,5 @@
 ---
-title: "photography for science and industry"
+title: "Image Portfolio"
 
 section: portfolio
 layout: default
