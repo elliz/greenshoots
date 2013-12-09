@@ -38,7 +38,7 @@ As <strong>award winning creative photographers</strong>, <a href="../portfolio/
     <li>Latin America</li>
     <li>The Middle East</li>
     <li>South East Asia</li>
-    <li>The Indian sub-continent</li>
+    <li>The Indian Sub-continent</li>
     <li>Europe</li>
 </ul>
 
@@ -48,7 +48,7 @@ As <strong>award winning creative photographers</strong>, <a href="../portfolio/
 
 <h2>Education, Science and Technology</h2>
 <p>
-We are also involved in education &mdash; creating <strong>dramatic and exciting photographic interpretations of <a href="../portfolio/science-technology/">science and technology</a></strong> to encourage <a href="../portfolio/people/">young people</a> to take up science.
+We are also involved in education &mdash; creating <strong>dramatic and exciting photographic interpretations of <a href="../portfolio/science-technology/">sciences and technology</a></strong> to encourage <a href="../portfolio/people/">young people</a> to take up science.
 </p>
 
 <p>
