@@ -10,6 +10,8 @@ baseurl: "/greenshoots/"
 # live
 # baseurl: "/"
 
+include: ['_redirects']
+relative_permalinks: false
 permalink: /:categories/:title
 pygments: false
 
