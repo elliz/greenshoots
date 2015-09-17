@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,15 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ site.description }}">
     <meta name="author" content="sam@elliz.com">
-    <link rel="shortcut icon" href="{{ site.baseurl }}favicon.png">
+    
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}assets/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}assets/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}assets/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}assets/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}assets/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}assets/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}assets/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}assets/icons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}assets/icons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}assets/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}assets/icons/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}assets/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}assets/icons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}assets/icons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="{{ site.baseurl }}assets/icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ site.baseurl }}assets/css/bootstrap.css" rel="stylesheet">
-	<link href="{{ site.baseurl }}assets/css/greenshoots.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}assets/css/greenshoots.css" rel="stylesheet">
 {% if page.gallery == true %}
       <link rel="stylesheet" href="{{ site.baseurl }}assets/css/blueimp-gallery.min.css">
 {% endif %}
-	
+    
     <!--[if lt IE 9]>
       <script src="{{ site.baseurl }}assets/js/html5shiv.js"></script>
       <script src="{{ site.baseurl }}assets/js/respond.min.js"></script>
@@ -31,7 +49,7 @@
 
         {% include footer.html %}
 
-	</div> <!-- /container -->
+    </div> <!-- /container -->
 
 <script src="{{ site.baseurl }}assets/js/jquery-1.10.2.min.js"></script>
 <script src="{{ site.baseurl }}assets/js/bootstrap.min.js"></script>

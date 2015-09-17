@@ -13,7 +13,7 @@ baseurl: "/greenshoots/"
 include: ['_redirects']
 relative_permalinks: false
 permalink: /:categories/:title
-pygments: false
+highlighter: false
 
 future: false 
 
