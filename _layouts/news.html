@@ -1,0 +1,48 @@
+---
+layout: page
+
+notes: this is the news layout
+---
+
+{% assign news_posts = site.categories.news %}
+{% assign latest_news_item = news_posts.first %}
+{% assign latest_news_item_images_tag = latest_news_item.images-tag %}
+
+<h2>{{ latest_news_item.title }}</h2>
+
+<div id="links">
+
+    {% for post in site.categories.news-images limit:6 %}
+        {% assign cur_post_tag = post.tags[0] %}
+        {% if cur_post_tag == latest_news_item_images_tag %}
+            <a data-url="{{ post.url }}/" href="../assets/photos/{{ post.photo }}" title="{{ post.title }}"><img src="../assets/thumbs/{{ post.photo }}" alt="{{ post.title }}" style="margin: 5px" /></a>
+        {% endif %}
+    {% endfor %}
+
+</div>
+
+{{ latest_news_item.content }}
+
+<h3>Older Posts</h3>
+<ul>
+    {% for post in news_posts limit:5 offset:1 %}
+        {% assign cur_post_tag = post.tags[0] %}
+        {% if cur_post_tag == 'news' %}
+            <li><a href="{{ post.url }}/">{{ post.title }}</a></li>
+        {% endif %}
+    {% endfor %}
+</ul>
+
+
+<h2>Links</h2>
+<p>You can view more of our images on:</p>
+<ul>
+    <li>
+        <a href="http://www.pro-imaging.org/portfolios/norman-childs/" title="Portfolio on Pro-Imaging website">Pro-Imaging.Org</a>
+    </li>
+    <li>
+        <a href="http://www.alamy.com/stock-photography/69F0887E-D730-46DA-9969-9E5963A27AF5/Greenshoots%20Communications.html">GreenShoots Image Library on Alamy.com</a>
+    </li>
+</ul>
+
+    {{ content }}
