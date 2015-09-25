@@ -1,7 +1,7 @@
 --- 
 title: The Living Rainforest
 
-layout: photo 
+layout: page 
 section: news
 tags: news 
 
@@ -14,6 +14,7 @@ images-tag: news-2015-09
 
 The above images are just a few from an ongoing project to provide a 
 photographic archive of all the plants and animals at the 
-<a href="http://www.livingrainforest.org">www.livingrainforest.org</a>
+<a href="http://www.livingrainforest.org">www.livingrainforest.org</a>.
 
-The Living Rainforest is an educational charity providing guided tours linked to the UK national school curriculum.
+The Living Rainforest is an educational charity providing guided 
+tours linked to the UK national school curriculum.

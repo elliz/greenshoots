@@ -3,5 +3,7 @@ title: Flower of Medinilla magnifica
 photo: GSLRF025876.jpg 
 layout: photo 
 section: news 
-tags: news-2015-09 
+tags: news-2015-09
+
+sitemap: false
 ---

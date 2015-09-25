@@ -3,18 +3,25 @@ description: "Photography for industry and science."
 
 # local
 # baseurl: /_site/
+# url: http://www.greenshoots.co.uk/
 
 # github
 baseurl: "/greenshoots/"
+url: http://elliz.github.io/greenshoots/
 
 # live
 # baseurl: "/"
+# url: http://www.greenshoots.co.uk/
 
 include: ['_redirects']
 relative_permalinks: false
 permalink: /:categories/:title
-highlighter: false
+highlighter: pygments
 
 future: false 
 
 markdown: kramdown
+
+gems:
+- jekyll-sitemap
+- jekyll-feed
