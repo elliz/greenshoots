@@ -1,0 +1,61 @@
+---
+layout: page
+
+notes: this is the news item layout
+
+photo-limit: 20
+---
+
+<h2>{{ page.title }}</h2>
+
+<div id="links">
+    {% assign i = 0 %}
+    {% for post in site.categories.news-images %}
+        {% assign cur_post_tag = post.tags[0] %}
+        {% if cur_post_tag == page.images-tag and i < page.photo-limit %}
+            {% assign i = i | plus:1 %}
+            <a data-url="{{ post.url }}/" href="{{site.baseurl}}assets/photos/{{ post.photo }}" title="{{ post.title }}"><img src="{{site.baseurl}}assets/thumbs/{{ post.photo }}" alt="{{ post.title }}" style="margin: 5px" /></a>
+        {% endif %}
+    {% endfor %}
+
+</div>
+
+{{ content }}
+
+
+
+{% assign found = false %}
+{% assign catg_posts = site.categories.news %}
+
+{% for post in catg_posts %}
+    {% assign cur_post_tag = post.tags[0] %}
+    {% if cur_post_tag == cur_tag %}
+
+        {% if found == true %}
+            {% assign next_post = post %}
+            {% assign found = false %}
+        {% endif %}
+
+        {% if post.url == page.url %}
+            {% assign prev_post = prev %}
+            {% assign found = true %}
+        {% endif %}
+
+        {% assign prev = post %}
+
+    {% endif %}
+
+{% endfor %}
+
+<ul>
+{% unless prev_post == null %}
+<li class="previous">
+    <a href="{{ site.baseurl }}{{ prev_post.url }}">&larr; Previous</a>
+</li>
+{% endunless %}
+{% unless next_post == null %}
+<li class="next">
+    <a href="{{ site.baseurl }}{{ next_post.url }}">Next &rarr;</a>
+</li>
+{% endunless %}
+</ul>

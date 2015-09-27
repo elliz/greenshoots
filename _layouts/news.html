@@ -2,6 +2,7 @@
 layout: page
 
 notes: this is the news layout
+photo-limit: 5
 ---
 
 {% assign news_posts = site.categories.news %}
@@ -11,10 +12,11 @@ notes: this is the news layout
 <h2>{{ latest_news_item.title }}</h2>
 
 <div id="links">
-
-    {% for post in site.categories.news-images limit:6 %}
+    {% assign i = 0 %}
+    {% for post in site.categories.news-images %}
         {% assign cur_post_tag = post.tags[0] %}
-        {% if cur_post_tag == latest_news_item_images_tag %}
+        {% if cur_post_tag == latest_news_item_images_tag and i < page.photo-limit %}
+            {% assign i = i | plus:1 %}
             <a data-url="{{ post.url }}/" href="../assets/photos/{{ post.photo }}" title="{{ post.title }}"><img src="../assets/thumbs/{{ post.photo }}" alt="{{ post.title }}" style="margin: 5px" /></a>
         {% endif %}
     {% endfor %}

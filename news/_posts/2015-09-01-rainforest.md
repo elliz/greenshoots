@@ -1,7 +1,7 @@
 --- 
 title: The Living Rainforest
 
-layout: page 
+layout: news-item 
 section: news
 tags: news 
 
