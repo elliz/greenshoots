@@ -3,6 +3,8 @@ layout: page
 
 notes: this is the news item layout
 
+gallery: true
+
 photo-limit: 20
 ---
 
@@ -19,17 +21,14 @@ photo-limit: 20
     {% endfor %}
 
 </div>
-
 {{ content }}
-
-
 
 {% assign found = false %}
 {% assign catg_posts = site.categories.news %}
 
 {% for post in catg_posts %}
     {% assign cur_post_tag = post.tags[0] %}
-    {% if cur_post_tag == cur_tag %}
+    {% if cur_post_tag == 'news' %}
 
         {% if found == true %}
             {% assign next_post = post %}
@@ -46,16 +45,18 @@ photo-limit: 20
     {% endif %}
 
 {% endfor %}
-
-<ul>
-{% unless prev_post == null %}
+<ul class="photonav clearfix">
 <li class="previous">
+    {% unless prev_post == null %}
     <a href="{{ site.baseurl }}{{ prev_post.url }}">&larr; Previous</a>
+    {% endunless %}
 </li>
-{% endunless %}
-{% unless next_post == null %}
+<li class="up">
+    <a href="{{ site.baseurl }}news/">News</a>
+</li>
 <li class="next">
+    {% unless next_post == null %}
     <a href="{{ site.baseurl }}{{ next_post.url }}">Next &rarr;</a>
+    {% endunless %}
 </li>
-{% endunless %}
 </ul>

@@ -65,16 +65,19 @@ a:active { color: #996633 }
 .photonav li {
     padding: 0;
     margin: 0;
-    display: block;
-    width: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 33%;
 }
 
 .photonav .previous {
-    float: left;
+    text-align: left;
+}
+
+.photonav .up {
 }
 
 .photonav .next {
-    float: right;
     text-align: right;
 }
 

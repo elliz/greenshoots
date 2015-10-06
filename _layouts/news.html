@@ -25,7 +25,7 @@ photo-limit: 5
 
 {{ latest_news_item.content }}
 
-<h3>Older Posts</h3>
+<h3>Older News</h3>
 <ul>
     {% for post in news_posts limit:5 offset:1 %}
         {% assign cur_post_tag = post.tags[0] %}

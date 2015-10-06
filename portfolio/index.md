@@ -2,7 +2,7 @@
 title: "Image Portfolio"
 
 section: portfolio
-layout: default
+layout: base
 gallery: true
 ---
 
