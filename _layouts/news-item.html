@@ -12,16 +12,17 @@ photo-limit: 20
 
 <div id="links">
     {% assign i = 0 %}
-    {% for post in site.categories.news-images %}
-        {% assign cur_post_tag = post.tags[0] %}
-        {% if cur_post_tag == page.images-tag and i < page.photo-limit %}
+    {% for image in page.photos %}
+        {% if i < page.photo-limit %}
             {% assign i = i | plus:1 %}
-            <a data-url="{{ post.url }}/" href="{{site.baseurl}}assets/photos/{{ post.photo }}" title="{{ post.title }}"><img src="{{site.baseurl}}assets/thumbs/{{ post.photo }}" alt="{{ post.title }}" style="margin: 5px" /></a>
+            <a href="{{site.baseurl}}assets/photos/{{ image.photo }}" title="{{ image.title }}"><img src="{{site.baseurl}}assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
         {% endif %}
     {% endfor %}
-
 </div>
+
 {{ content }}
+
+{% capture doNotRenderWhitespace %}
 
 {% assign found = false %}
 {% assign catg_posts = site.categories.news %}
@@ -43,8 +44,9 @@ photo-limit: 20
         {% assign prev = post %}
 
     {% endif %}
-
 {% endfor %}
+
+{% endcapture %}{% assign doNotRenderWhitespace = nil %}
 <ul class="photonav clearfix">
 <li class="previous">
     {% unless prev_post == null %}

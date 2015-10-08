@@ -7,17 +7,15 @@ photo-limit: 5
 
 {% assign news_posts = site.categories.news %}
 {% assign latest_news_item = news_posts.first %}
-{% assign latest_news_item_images_tag = latest_news_item.images-tag %}
 
 <h2>{{ latest_news_item.title }}</h2>
 
 <div id="links">
     {% assign i = 0 %}
-    {% for post in site.categories.news-images %}
-        {% assign cur_post_tag = post.tags[0] %}
-        {% if cur_post_tag == latest_news_item_images_tag and i < page.photo-limit %}
+    {% for item in latest_news_item.photos %}
+        {% if i < page.photo-limit %}
             {% assign i = i | plus:1 %}
-            <a data-url="{{ post.url }}/" href="../assets/photos/{{ post.photo }}" title="{{ post.title }}"><img src="../assets/thumbs/{{ post.photo }}" alt="{{ post.title }}" style="margin: 5px" /></a>
+            <a href="../assets/photos/{{ item.photo }}" title="{{ item.title }}"><img src="../assets/thumbs/{{ item.photo }}" alt="{{ item.title }}" style="margin: 5px" /></a>
         {% endif %}
     {% endfor %}
 
@@ -35,7 +33,6 @@ photo-limit: 5
     {% endfor %}
 </ul>
 
-
 <h2>Links</h2>
 <p>You can view more of our images on:</p>
 <ul>
@@ -47,4 +44,4 @@ photo-limit: 5
     </li>
 </ul>
 
-    {{ content }}
+{{ content }}

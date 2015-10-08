@@ -5,11 +5,24 @@ layout: news-item
 section: news
 tags: news 
 
-images-tag: news-2015-09
+photos:
+- title: "Bud of White Bat Plant (Tacca integrifolia)"
+  photo: GSLRF025869.jpg
+- title: "Inflorescence of White Bat Plant (Tacca integrifolia)"
+  photo: GSLRF030189.jpg
+- title: "Chinese Water Dragon (Physignathus cocincinus)"
+  photo: GSLRF015776.jpg
+- title: "Flower of Medinilla magnifica"
+  photo: GSLRF025876.jpg
+- title: "Anthurium 'Jungle King' Flowers Close-up with nectar. (Anthurium crassinervium or ellipticum)"
+  photo: GSLRF015814.jpg
+- title: "Inflorescence of Anthurium magnificum"
+  photo: GSLRF030159.jpg
+- title: "Arthurium crystallinum leaf detail"
+  photo: GSLRF025864.jpg
+- title: "Black Anthurium flower or inflourescence. (Anthurium watermaliense)"
+  photo: GSLRF015825.jpg
 
-# All image details are in posts in news/2015-09-01/_posts folder under 
-# The images are inserted using the images-tag which must match the tag 
-# on the images for this post
 ---  
 
 The above images are just a few from an ongoing project to provide a 
