@@ -30,7 +30,7 @@ footerleft: true
 
         <div class="photo-wrapper">
         {% if next_post != null %}
-        <a href="{{ site.baseurl }}{{ next_post.url }}" title="Next image">
+        <a href="{{ site.baseurl }}{{ next_post.url | remove_first:'/' }}" title="Next image">
         {% else %}
         <a href="{{ site.baseurl }}" title="Home">
         {% endif %}
@@ -46,12 +46,12 @@ footerleft: true
                 <ul class="photonav clearfix">
 {% unless prev_post == null %}
             <li class="previous">
-            <a href="{{ site.baseurl }}{{ prev_post.url }}">&larr; Previous</a>
+            <a href="{{ site.baseurl }}{{ prev_post.url | remove_first:'/' }}">&larr; Previous</a>
             </li>
 {% endunless %}
 {% unless next_post == null %}
                 <li class="next">
-                <a href="{{ site.baseurl }}{{ next_post.url }}">Next &rarr;</a>
+                <a href="{{ site.baseurl }}{{ next_post.url | remove_first:'/' }}">Next &rarr;</a>
                 </li>
 {% endunless %}
         </ul>
