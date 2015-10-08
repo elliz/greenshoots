@@ -30,7 +30,7 @@ photo-limit: 5
     {% for post in news_posts limit:5 offset:1 %}
         {% assign cur_post_tag = post.tags[0] %}
         {% if cur_post_tag == 'news' %}
-            <li><a href="{{site.baseurl}}{{ post.url }}/">{{ post.title }}</a></li>
+            <li><a href="{{ site.baseurl }}{{ post.url }}/">{{ post.title }}</a></li>
         {% endif %}
     {% endfor %}
 </ul>
