@@ -48,7 +48,7 @@ photo-limit: 20
 <ul class="photonav clearfix">
 <li class="previous">
     {% unless prev_post == null %}
-    <a href="{{ site.baseurl }}{{ prev_post.url }}">&larr; Previous</a>
+    <a href="{{ site.baseurl }}{{ prev_post.url | remove_first:'/' }}">&larr; Previous</a>
     {% endunless %}
 </li>
 <li class="up">
@@ -56,7 +56,7 @@ photo-limit: 20
 </li>
 <li class="next">
     {% unless next_post == null %}
-    <a href="{{ site.baseurl }}{{ next_post.url }}">Next &rarr;</a>
+    <a href="{{ site.baseurl }}{{ next_post.url | remove_first:'/' }}">Next &rarr;</a>
     {% endunless %}
 </li>
 </ul>
