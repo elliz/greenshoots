@@ -26,6 +26,15 @@ gems:
 - jekyll-sitemap
 - jekyll-feed
 
+
+# Photos collection in portfolio folder
+
+collections:
+  images:
+    output: true
+    permalink: /portfolio/:path/
+
+
 compress_html:
   clippings: []
   comments: []

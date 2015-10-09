@@ -47,6 +47,10 @@ photo-wrapper
     font-size: 0.9em;
 }
 
+#links img {
+    margin: 5px;
+}
+
 a {
     color: #25A525;
 }
@@ -59,7 +63,7 @@ a:active { color: #996633 }
     list-style: none;
     padding: 0;
     margin: 1em 0;
-    font-size: .8em;
+    font-size: .9em;
 }
 
 .photonav li {
@@ -67,7 +71,15 @@ a:active { color: #996633 }
     margin: 0;
     display: inline-block;
     text-align: center;
-    width: 33%;
+    width: 32%;
+}
+
+.photonav2 li{
+    width: 49.5%
+}
+
+.photonav3 li{
+    width: 32%
 }
 
 .photonav .previous {

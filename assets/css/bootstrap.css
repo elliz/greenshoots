@@ -819,7 +819,7 @@ address {
     max-width: 950px;
   }
 
-  .col-md-3 h1, .col-md-3 p { text-align: right; }
+  .col-md-3 h1, .col-md-3 p, .col-md-3 div, .col-md-3 h2, .col-md-3 h3 { text-align: right; }
 
     .home .col-md-9 {
         padding-left: 0;

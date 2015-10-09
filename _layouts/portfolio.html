@@ -3,28 +3,14 @@ layout: base
 ---
 
 {% include col-start.html xs="12" sm="12" md="3" clearfix="" %}
-
 <h1>{{ page.heading }}</h1>
-
 {% include col-end.html %}
 
 {% include col-start.html xs="12" sm="12" md="9" clearfix="" %}
-
 <div id="links">
-
-{% assign cur_tag = page.showtag %}
-{% assign catg_posts = site.categories.portfolio %}
-
-{% for image in catg_posts %}
-    {% assign cur_post_tag = image.tags[0] %}
-    {% if cur_post_tag == cur_tag %}
-<a href="../../assets/photos/{{ image.photo }}" title="{{ image.title }}"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
- <!--       
-<a href="../..{{ image.url }}/"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" style="margin: 5px" /></a>
--->
-    {% endif %}
-    
-{% endfor %}
+{% assign tag_images = site.images | where:'tag', page.showtag %}
+{% for image in tag_images %}<a href="../../assets/photos/{{ image.photo }}" title="{{ image.title }}"><img src="../../assets/thumbs/{{ image.photo }}" alt="{{ image.title }}" /></a>{% endfor %}
 </div>
-
+{% assign first = tag_images | first %}
+<p>You can also <a href="{{ site.baseurl }}{{ first.url | remove_first:'/' }}">see these images page-by-page</a>.</p>
 {% include col-end.html %}

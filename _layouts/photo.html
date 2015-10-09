@@ -4,56 +4,53 @@ gallery: true
 footerleft: true
 ---
 
-{% assign cur_tag = page.tags[0] %}
-{% assign found = false %}
-{% assign catg_posts = site.categories.portfolio %}
+{% capture doNotRenderWhitespace %}
+    {% assign found = false %}
+    {% assign catg_posts = site.images | where:'tag', page.tag %}
 
-{% for post in catg_posts %}
-    {% assign cur_post_tag = post.tags[0] %}
-    {% if cur_post_tag == cur_tag %}
-        
+    {% for post in catg_posts %}
         {% if found == true %}
             {% assign next_post = post %}
             {% assign found = false %}
         {% endif %}
-
         {% if post.photo == page.photo %}
             {% assign prev_post = prev %}
             {% assign found = true %}
         {% endif %}
-
         {% assign prev = post %}
-        
-    {% endif %}
-    
-{% endfor %}
+    {% endfor %}
 
-        <div class="photo-wrapper">
-        {% if next_post != null %}
-        <a href="{{ site.baseurl }}{{ next_post.url | remove_first:'/' }}" title="Next image">
-        {% else %}
-        <a href="{{ site.baseurl }}" title="Home">
-        {% endif %}
-		<img src="../../assets/photos/{{ page.photo }}" alt="{{ page.title }}" class="img-responsive" /></a>
-        </div>
+{% endcapture %}{% assign doNotRenderWhitespace = nil %}
 
-        <p>{{ page.title }}</p>
+{% include col-start.html xs="12" sm="12" md="3" clearfix="" %}
+<div class="breadcrumbs"><a href="{{ site.baseurl }}portfolio/">portfolio</a> &gt; <a href="{{ site.baseurl }}portfolio/{{ page.tag }}/">{{ page.tag | replace:'-', ' ' }}</a></div>
+<h3>{{ page.title }}</h3>
+{{ content }}
+{% if page.alamy %}
+<p>This image is available to <a href="{{ page.alamy }}">buy on the alamy website</a>.</p>
+{% endif %}
+{% include col-end.html %}
 
-        <div>
-        {{ content }}
-		</div>
+{% include col-start.html xs="12" sm="12" md="9" clearfix="" %}
+<div class="photo-wrapper">
+{% if next_post != null %}
+<a href="{{ site.baseurl }}{{ next_post.url | remove_first:'/' }}" title="Next image">
+{% else %}
+<a href="{{ site.baseurl }}portfolio/{{ page.tag }}/" title="Portfolio">
+{% endif %}
+<img src="{{ site.baseurl }}assets/photos/{{ page.photo }}" alt="{{ page.title }}" class="img-responsive" /></a>
+</div>
 
-                <ul class="photonav clearfix">
-{% unless prev_post == null %}
-            <li class="previous">
-            <a href="{{ site.baseurl }}{{ prev_post.url | remove_first:'/' }}">&larr; Previous</a>
-            </li>
-{% endunless %}
-{% unless next_post == null %}
-                <li class="next">
-                <a href="{{ site.baseurl }}{{ next_post.url | remove_first:'/' }}">Next &rarr;</a>
-                </li>
-{% endunless %}
-        </ul>
-
-
+<ul class="photonav photonav2 clearfix">
+    <li class="previous">
+        {% unless prev_post == null %}
+        <a href="{{ site.baseurl }}{{ prev_post.url | remove_first:'/' }}">&larr; Previous<br /><img src="{{ site.baseurl }}assets/thumbs/{{ prev_post.photo }}" alt="{{ prev_post.title }}" /></a>
+        {% endunless %}
+    </li>
+    <li class="next">
+        {% unless next_post == null %}
+        <a href="{{ site.baseurl }}{{ next_post.url | remove_first:'/' }}">Next &rarr;<br /><img src="{{ site.baseurl }}assets/thumbs/{{ next_post.photo }}" alt="{{ next_post.title }}" /></a>
+        {% endunless %}
+    </li>
+</ul>
+{% include col-end.html %}
