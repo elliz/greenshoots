@@ -4,5 +4,47 @@
     "inputFiles": [
       "assets/css/greenshoots.css"
     ]
+  },
+  {
+    "outputFileName": "assets/css/blueimp-gallery.css",
+    "inputFiles": [
+      "assets/css/blueimp-gallery.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/css/blueimp-gallery-indicator.css",
+    "inputFiles": [
+      "assets/css/blueimp-gallery-indicator.css"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/blueimp-gallery.js",
+    "inputFiles": [
+      "assets/js/blueimp-gallery.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/blueimp-gallery-fullscreen.js",
+    "inputFiles": [
+      "assets/js/blueimp-gallery-fullscreen.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/blueimp-gallery-fullscreen.js",
+    "inputFiles": [
+      "assets/js/blueimp-gallery-fullscreen.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/blueimp-gallery-indicator.js",
+    "inputFiles": [
+      "assets/js/blueimp-gallery-indicator.js"
+    ]
+  },
+  {
+    "outputFileName": "assets/js/blueimp-helper.js",
+    "inputFiles": [
+      "assets/js/blueimp-helper.js"
+    ]
   }
 ]

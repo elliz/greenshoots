@@ -1,0 +1,11 @@
+---
+# Empty yaml front matter to force liquid engine
+---
+
+/*
+ * blueimp Gallery CSS https://github.com/blueimp/Gallery
+ * Copyright 2013, Sebastian Tschan https://blueimp.net
+ * Licensed under the MIT license: http://www.opensource.org/licenses/MIT
+ */
+{% include_relative blueimp-gallery.min.css %}
+{% include_relative blueimp-gallery-indicator.min.css %}
