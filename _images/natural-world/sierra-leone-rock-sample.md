@@ -1,5 +1,5 @@
 ---
-title: Banded Iron Formation - Sierra Leone
+title: "Geological rock sample showing Banded Iron Formation (BIF) from gold mine, Sierra Leone"
 photo: GSCGBH064639.jpg 
 layout: photo 
 section: portfolio

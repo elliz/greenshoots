@@ -1,5 +1,5 @@
 ---
-title: Gold ore sample
+title: "Geological rock sample showing rhyolite, iron and manganese crystalline staining on gold mine, Mauritania"
 photo: GSKT263359Y.jpg 
 layout: photo 
 section: portfolio 
